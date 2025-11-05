@@ -67,7 +67,7 @@ body.light-theme .btn-warning {
 /* Adjust height for smaller screens */
   .hero-section {
     background-position: top center;
-    background-image: url("images/backkground/retina_display_bg.jpg"); /* replace with your image path */
+    background-image: url("https://jackkhoury06.github.io/portfolio/images/background/retina_display_bg.jpg"); /* replace with your image path */
     
   }
 }
@@ -76,7 +76,7 @@ body.light-theme .btn-warning {
 @media (max-width: 2560px) {
   .hero-section {
     background-position: top center;
-    background-image: url("images/backkground/large_desktop_bg.jpg"); /* replace with your image path */
+    background-image: url("https://jackkhoury06.github.io/portfolio/images/background/large_desktop_bg.jpg"); /* replace with your image path */
     
   }
 }
@@ -84,7 +84,7 @@ body.light-theme .btn-warning {
 @media (max-width: 1600px) {
   .hero-section {
     background-position: top center;
-    background-image: url("images/backkground/laptop_small_bg.jpg"); /* replace with your image path */
+    background-image: url("https://jackkhoury06.github.io/portfolio/images/background/laptop_small_bg.jpg"); /* replace with your image path */
     
   }
 }
@@ -92,14 +92,14 @@ body.light-theme .btn-warning {
 @media (max-width: 1024px) {
   .hero-section {
     background-position: center;
-    background-image: url("images/backkground/tablet_bg.jpg"); /* replace with your image path */
+    background-image: url("https://jackkhoury06.github.io/portfolio/images/background/tablet_bg.jpg"); /* replace with your image path */
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
     background-position: center;
-    background-image: url("images/background/mobile_bg.jpg"); /* replace with your image path */
+    background-image: url("https://jackkhoury06.github.io/portfolio/images/background/mobile_bg.jpg"); /* replace with your image path */
   }
 }
 
