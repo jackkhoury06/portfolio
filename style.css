@@ -6,7 +6,6 @@ body {
 #hero {
   position: relative;
   height: 100vh;
-  background: url('https://via.placeholder.com/1920x1080?text=Background+Image') center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -31,3 +30,76 @@ body.light-theme .btn-warning {
   background-color: #b87d36;
   border: none;
 }
+
+
+/* Responsive background image for hero/first section */
+.hero-section {
+  background-size: cover; /* ensures the image covers the section fully */
+  background-position: center center; /* keeps image centered */
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Optional overlay with 70% opacity */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 70% opacity overlay */
+  z-index: 1;
+}
+
+/* Ensures text stays above overlay */
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Adjust height for smaller screens */
+  .hero-section {
+    background-position: top center;
+    background-image: url("images/backkground/retina_display_bg.jpg"); /* replace with your image path */
+    
+  }
+}
+
+
+@media (max-width: 2560px) {
+  .hero-section {
+    background-position: top center;
+    background-image: url("images/backkground/large_desktop_bg.jpg"); /* replace with your image path */
+    
+  }
+}
+
+@media (max-width: 1600px) {
+  .hero-section {
+    background-position: top center;
+    background-image: url("images/backkground/laptop_small_bg.jpg"); /* replace with your image path */
+    
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    background-position: center;
+    background-image: url("images/backkground/tablet_bg.jpg"); /* replace with your image path */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    background-position: center;
+    background-image: url("images/background/mobile_bg.jpg"); /* replace with your image path */
+  }
+}
+
