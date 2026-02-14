@@ -103,3 +103,39 @@ body.light-theme .btn-warning {
   }
 }
 
+#photoCarousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  max-height: 80vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 1rem;
+}
+
+#photo-grid .col a {
+  display: block;
+  overflow: hidden;
+  border-radius: .25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+#photo-grid .col a:hover {
+  transform: scale(1.05);
+}
+
+#imageModal .modal-dialog {
+  max-width: 90vw;
+}
+
+#modalImage {
+  max-height: 90vh;
+  width: auto;
+}
